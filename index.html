@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>BING BONG SHOOTING</title>
+    <link rel = "stylesheet" href = "style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id = "container">
+        <div id = "GameIntroduction" >
+            <button class = "Title">BING BONG SHOOTING</button>
+            <div id = "GameCenter">
+                <button class = "btn" id = "Play" onclick = "play()"><span>Play</span></button>
+                <br>
+                <button class = "btn" id = "Guide"onclick = "howToPlay()"><span>HOW TO PLAY</span></button>
+            </div>
+        </div>
+        <div id = "GameOver" style = "display:none">
+            <button class = "Title">GAME OVER!</button>
+            <div id = "GameCenter">
+                <button class = "btn" id = "Restart" onclick = "play()"><span>Play Again</span></button>
+                <br>
+                <button class = "btn" id = "Exit" onclick = "back()"><span>Exit</span></button>
+            </div>
+        </div>
+        <div id = "GuideBoard" style = "display:none">
+            <button class = "Title">HOW TO PLAY</button>
+            <div id = "Guidelist">
+                <li>In this game, you will play as a defender. Your mission is to kill all the balls before they escape.</li>
+                <li>Use the computer mouse to indicate the cursor on the computer screen. The defender will shoot at the cursor’s direction.</li>
+                <li>If any ball move toward and touch the defender, the game will be over.</li>
+                <li>Every 10 balls killed will increase the allowed number of escaped balls by one.</li>
+                <li>The longer you play, the more difficult the game will be.</li>
+                <p style = "text-align:center">Have fun :)</p>
+            </div>
+        </div>
+        <!-- <div id = "defender"></div>
+        <div class = "ball"></div> -->
+    </div> 
+    <div style = "width:30%">
+        <button class = "btn" id = "Back" onclick = "back()"><span>Back</span></button>
+        <br>
+        <p class = "Score" id = "Killed" style = "display:none"></p>
+        <p class = "Score" id = "Escaped" style = "display:none"></p> 
+    </div>
+    <script src = "index.js"></script>
+</body>
+
+</html>

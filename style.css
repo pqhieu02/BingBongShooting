@@ -1,0 +1,150 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(150, 225, 255);
+}
+
+#Minigame {
+    /* position: absolute; */
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    transform: translate(-50%, 0%);
+    position: absolute;
+    background-color: rgb(122, 255, 107);
+    width: 40%;
+    height: 100%;
+    left: 50%;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+#defender {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width:40px;
+    height:40px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.ball {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: red;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    /* top: 49%;
+    left: 38%; */
+}
+
+.bullet {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: orange;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.Title {
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: center;
+    left: 50%;
+    top:15%;
+    position: absolute;
+    background: none;
+    border: none;
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: red;
+    outline: none;
+    box-shadow: 0 15px gray;
+}
+
+.Title:active {
+    box-shadow: 0 10px #666;
+    transform: translate(-50%, -45%);
+}
+
+#GameCenter {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 5px solid black;
+    border-radius: 50px;
+    outline: none;
+    transition: 0.5s;
+}
+
+#GameCenter .btn:hover {
+    font-size: 2vw;
+    padding-right: 40px;
+}
+
+#GameCenter .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+}
+
+#GameCenter .btn:hover span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 1;
+}
+
+#Back {
+    display:none;
+    float: right;
+    font-size: 1vw;
+}
+#Back span:before {
+    content: "\00AB";
+    position:absolute;
+    opacity: 0;
+}
+#Back:hover span:before {
+    content: "\00AB";
+    position: initial;
+    opacity: 1;
+}
+#Back:hover {
+    font-size:2vw;
+}
+
+.Score {
+    font-weight:bold;
+    font-size:3vw;
+}
+#Guidelist {
+    position:absolute;
+    top:25%;
+    left:10%;
+    width:80%;
+    height:70%;
+    display:block;
+    font-size:2vw;
+}
